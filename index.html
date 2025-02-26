@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>High-grossing films by year of release</h1>
+        <table id="movies-table">
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                        <div class="sort-btn-container">
+                            <button class="sort-btn" data-column="title" data-order="asc">▲</button>
+                            <button class="sort-btn" data-column="title" data-order="desc">▼</button>
+                        </div>
+                        <input type="text" class="search-input" data-column="title" placeholder="Search...">
+                    </th>
+                    <th>
+                        Year
+                        <div class="sort-btn-container">
+                            <button class="sort-btn" data-column="release_year" data-order="asc">▲</button>
+                            <button class="sort-btn" data-column="release_year" data-order="desc">▼</button>
+                        </div>
+                        <input type="text" class="search-input" data-column="release_year" placeholder="Search...">
+                    </th>
+                    <th>
+                        Director(s)
+                        <input type="text" class="search-input" data-column="director" placeholder="Search...">
+                    </th>
+                    <th>
+                        Budget
+                        <div class="sort-btn-container">
+                            <button class="sort-btn" data-column="budget" data-order="asc">▲</button>
+                            <button class="sort-btn" data-column="budget" data-order="desc">▼</button>
+                        </div>
+                        <input type="text" class="search-input" data-column="budget" placeholder="Search...">
+                    </th>
+                    <th>
+                        Box Office
+                        <div class="sort-btn-container">
+                            <button class="sort-btn" data-column="box_office" data-order="asc">▲</button>
+                            <button class="sort-btn" data-column="box_office" data-order="desc">▼</button>
+                        </div>
+                        <input type="text" class="search-input" data-column="box_office" placeholder="Search...">
+                    </th>
+                    <th>
+                        Production Company(s)
+                        <input type="text" class="search-input" data-column="production_company" placeholder="Search...">
+                    </th>
+                    <th>
+                        Distributor(s)
+                        <input type="text" class="search-input" data-column="distributed_by" placeholder="Search...">
+                    </th>
+                    <th>
+                        Runtime
+                        <input type="text" class="search-input" data-column="running_time" placeholder="Search...">
+                    </th>
+                    <th>
+                        Language(s)
+                        <input type="text" class="search-input" data-column="languages" placeholder="Search...">
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <div id="popup-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
