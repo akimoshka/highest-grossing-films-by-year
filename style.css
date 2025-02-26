@@ -152,7 +152,7 @@ th:not(.sortable):hover {
 }
 
 .popup-content {
-    color: #333;
+    color: #fff;
     background: linear-gradient(135deg, #ff80ab, #fbe2e5);
     padding: 20px;
     border-radius: 10px;
@@ -161,20 +161,30 @@ th:not(.sortable):hover {
     position: relative;
 }
 
-#popup-body p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 5px 0;
-    color: #fff;
+.popup-content h2 {
+    color: #ff4081;
+}
+
+.popup-content div.popup-info{
+    text-align: left;
+}
+
+.popup-label {
+    font-weight: bold;
+}
+
+.popup-title {
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
-    color: #333;
+    color: #ffe6f2;
 }
 
 .close-btn:hover {
@@ -182,7 +192,7 @@ th:not(.sortable):hover {
 }
 
 #popup-body {
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 /* Scrollbar */

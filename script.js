@@ -81,13 +81,13 @@ function showPopup(movie) {
         <h2 class="popup-title">${movie.title}</h2>
         <div class="popup-info">
             <div class="popup-row"><span class="popup-label">Year:</span> <span class="popup-value">${movie.release_year}</span></div>
-            <div class="popup-row"><span class="popup-label">Director:</span> <span class="popup-value">${movie.director || "N/A"}</span></div>
+            <div class="popup-row"><span class="popup-label">Director(s):</span> <span class="popup-value">${movie.director || "N/A"}</span></div>
             <div class="popup-row"><span class="popup-label">Budget:</span> <span class="popup-value">${formatCurrency(movie.budget)}</span></div>
             <div class="popup-row"><span class="popup-label">Box Office:</span> <span class="popup-value">${formatCurrency(movie.box_office)}</span></div>
-            <div class="popup-row"><span class="popup-label">Production Company:</span> <span class="popup-value">${movie.production_company || "N/A"}</span></div>
-            <div class="popup-row"><span class="popup-label">Distributor:</span> <span class="popup-value">${movie.distributed_by || "N/A"}</span></div>
+            <div class="popup-row"><span class="popup-label">Production Company(s):</span> <span class="popup-value">${movie.production_company || "N/A"}</span></div>
+            <div class="popup-row"><span class="popup-label">Distributor(s):</span> <span class="popup-value">${movie.distributed_by || "N/A"}</span></div>
             <div class="popup-row"><span class="popup-label">Runtime:</span> <span class="popup-value">${movie.running_time || "N/A"}</span></div>
-            <div class="popup-row"><span class="popup-label">Languages:</span> <span class="popup-value">${movie.languages || "N/A"}</span></div>
+            <div class="popup-row"><span class="popup-label">Language(s):</span> <span class="popup-value">${movie.languages || "N/A"}</span></div>
         </div>
     `;
     document.getElementById("popup").style.display = "flex"; // Show the popup
