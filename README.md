@@ -1,2 +1,3 @@
 # highest-grossing-films-by-year
-My website showcasing all of the highest grossing films by each year.
+My interactive website showcasing all of the highest grossing films by each year.
+https://akimoshka.github.io/highest-grossing-films-by-year/
